@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import WorkCarousel from "../components/WorkCarousel";
-import homepageImg from "../assets/homepage1.JPG";
+import homepageImg from "../assets/homepage1.jpg";
 
 const Home = () => {
   const location = useLocation();
