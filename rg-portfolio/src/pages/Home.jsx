@@ -17,7 +17,7 @@ const Home = () => {
       }, 100);
     }
   }, [location]);
-  
+
 
   return (
     <div style={{ color: "black", padding: "16px 16px" }}>
