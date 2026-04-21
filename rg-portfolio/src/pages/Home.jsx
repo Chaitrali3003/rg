@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import WorkCarousel from "../components/WorkCarousel";
-import homepageImg from "../assets/homepage1.jpg";
+import homepageImg from "../assets/r3.jpg";
+import board from "../assets/board.png";
+import mountain from "../assets/mountain.jpg";
 
 const Home = () => {
   const location = useLocation();
@@ -33,7 +35,7 @@ const Home = () => {
     src={homepageImg}
     alt="Reema"
     style={{
-      height: '76px',       // match font size or desired height
+      height: '126px',       // match font size or desired height
       width: 'auto',        // preserve aspect ratio
       marginLeft: '12px',   // spacing from text
     }}
@@ -41,28 +43,28 @@ const Home = () => {
 </div>
 
       <div style={{lineHeight:'128px', fontSize:'76px',fontWeight:'500', marginTop:'24px'}}>
-        <img style={{height:'50px',width:'70px'}} src="src/assets/board.png" alt="board" />
+        <img style={{height:'50px',width:'70px'}} src={board} alt="board" />
         a design researcher
       </div>
 
       <div style={{lineHeight:'128px', fontSize:'76px',fontWeight:'500', marginTop:'24px'}}>
         and strategist 
-        <img style={{height:'50px',width:'70px'}} src="src/assets/mountain.jpg" alt="mountain" />
+        <img style={{height:'50px',width:'70px'}} src={mountain} alt="mountain" />
       </div>
 
       {/* 👇 THESE 2 LINES (KEPT EXACTLY) */}
       <div style={{ fontSize:'20px',fontWeight:'300', marginTop:'54px'}}>
-        Recently, graduated with a master’s in Strategic Design from 
+        Recently, graduated with a master’s in Strategic Design from  &nbsp;
         <a href="https://www.polimi.it/" target="_blank" rel="noopener noreferrer">
           <u>Politecnico di Milano</u>
         </a> 🇮🇹
       </div>
 
       <div style={{ fontSize:'20px',fontWeight:'300', marginTop:'14px'}}>
-        Previously, graduated from 
+        Previously, graduated from &nbsp;
         <a href="https://www.nid.edu/" target="_blank" rel="noopener noreferrer">
-          <u>National Institute of Design, Ahmedabad</u>
-        </a> and worked at 
+          <u>National Institute of Design,&nbsp; Ahmedabad</u>
+        </a> and worked at &nbsp;
         <a href="https://www.thoughtworks.com/" target="_blank" rel="noopener noreferrer">
           <u>Thoughtworks, India</u>
         </a>

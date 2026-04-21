@@ -5,13 +5,17 @@ import {
   useTransform,
 } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-
+import im1 from  "../assets/project1.png"
+import im2 from  "../assets/project2.png"
+import im3 from  "../assets/project3.png"
+import im4 from  "../assets/project4.png"
+import im5 from  "../assets/project5.png"   
 const projects = [
-  { id: 1, title: "How might emotionally aware AI support urban navigation?", image: "src/assets/project1.png" },
-  { id: 2, title: "How can movement-based learning open new contexts for responsive technology?", image: "src/assets/project2.png" },
-  { id: 3, title: "How might we help K–12 students to develop social design practice?", image: "src/assets/project3.png" },
-  { id: 4, title: "Rethinking menstrual wellness beyond period tracking", image: "src/assets/project4.png" },
-  { id: 5, title: "How might we reimagine surplus food donation as a network of mutual benefit?", image: "src/assets/project5.png" },
+  { id: 1, title: "How might emotionally aware AI support urban navigation?", image: im1 },
+  { id: 2, title: "How can movement-based learning open new contexts for responsive technology?", image: im2 },
+  { id: 3, title: "How might we help K–12 students to develop social design practice?", image: im3 },
+  { id: 4, title: "Rethinking menstrual wellness beyond period tracking", image: im4 },
+  { id: 5, title: "How might we reimagine surplus food donation as a network of mutual benefit?", image: im5 },
 //   { id: 6, title: "Project 6", image: "src/assets/project6.png" },
 ];
 
