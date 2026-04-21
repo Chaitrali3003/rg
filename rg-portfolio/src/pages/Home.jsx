@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import WorkCarousel from "../components/WorkCarousel";
+import homepageImg from "../assets/homepage1.JPG";
 
 const Home = () => {
   const location = useLocation();
@@ -29,7 +30,7 @@ const Home = () => {
 }}>
   I’m Reema
   <img
-    src="src/assets/homepage1.JPG"
+    src={homepageImg}
     alt="Reema"
     style={{
       height: '76px',       // match font size or desired height
