@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import WorkCarousel from "../components/WorkCarousel";
-import homepageImg from "../assets/r3.jpg";
+import homepageImg from "../assets/r33.jpg";
 import board from "../assets/board.png";
 import mountain from "../assets/mountain.jpg";
 
