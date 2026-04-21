@@ -24,11 +24,31 @@ const WorkCarousel = () => {
   const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
   const ref = useRef(null);
+const handlePrev = () => setIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+  const handleNext = () => setIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
 
   const isMobile = window.innerWidth < 768;
   const visible = isMobile ? 1 : 3;
   const maxIndex = projects.length - visible;
-
+  const arrowStyle = {
+    position: "absolute",
+    top: "50%",
+    transform: "translateY(-50%)",
+    zIndex: 10,
+    background: "rgba(255, 255, 255, 0.12)",
+    backdropFilter: "blur(6px)",
+    border: "1px solid rgba(255, 255, 255, 0.25)",
+    borderRadius: "50%",
+    width: "44px",
+    height: "44px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    cursor: "pointer",
+    color: "inherit",
+    fontSize: "18px",
+    transition: "background 0.2s ease",
+  };
   // ✅ AUTO SLIDE (premium smooth loop)
   useEffect(() => {
     if (isHovered) return;
@@ -63,12 +83,33 @@ const WorkCarousel = () => {
         RECENT WORK ●
       </div>
 
-      {/* VIEWPORT */}
+           {/* VIEWPORT — position: relative so arrows anchor to it */}
       <div
-        style={{ overflow: "hidden", width: "100%" }}
+        style={{ overflow: "hidden", width: "100%", position: "relative" }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
+        {/* PREV ARROW */}
+        <button
+          onClick={handlePrev}
+          style={{ ...arrowStyle, left: "12px" }}
+          onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.25)")}
+          onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.12)")}
+          aria-label="Previous"
+        >
+          ‹
+        </button>
+
+        {/* NEXT ARROW */}
+        <button
+          onClick={handleNext}
+          style={{ ...arrowStyle, right: "12px" }}
+          onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.25)")}
+          onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.12)")}
+          aria-label="Next"
+        >
+          ›
+        </button>
         <motion.div
           drag="x"
           dragConstraints={{ left: -300, right: 0 }}
