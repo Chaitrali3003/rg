@@ -299,7 +299,7 @@ const Project1 = () => {
 
       {/* PREV / NEXT */}
     <div style={fullWidthStyle(heroColor)}>
-  <div className="proj-nav-footer">
+  <div className="proj-nav-footer container">
     <motion.button
       className="proj-nav-btn"
       disabled={true}

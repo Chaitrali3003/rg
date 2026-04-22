@@ -32,8 +32,9 @@ const projectConfig = {
   },
   "project-cream": {
     label: "Project Cream",
-    heroColor: "#F5F0DC",   // pale cream    (screenshot 6)
+    heroColor: "#ffffff",   // pale cream    (screenshot 6)
     textColor: "#1a2a4a",
+     bgLight:   "#EEEFD0",
   },
 };
 

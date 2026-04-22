@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import project5Img from "../assets/project4.png";
+import project5Img from "../assets/project5.png";
 import projectConfig from "../config/projectConfig";
 import "../../src/App.css";
 
@@ -17,7 +17,7 @@ import {
 const PROJECT_ID = "project-cream";
 const { heroColor, textColor, bgLight } = projectConfig[PROJECT_ID];
 
-const ACCENT = "#AD0058";  // crimson — used for tags, step dots, labels
+const ACCENT = "#D4691E";  // orange — Banco Alimentare brand
 
 const steps = [
   {
@@ -28,16 +28,16 @@ const steps = [
   {
     n: 2, icon: "🕳️", title: "Finding gaps",
     tags: ["Gap analysis", "Opportunity Mapping", "Ideation"],
-    body: "We then turned inward to examine the friction points in Banco Alimentare’s current model. As we mapped these gaps, a few early directions began to take shape. But they felt premature, so we paused and shifted to a futures thinking approach to bring a more systemic perspective to the work.",
+    body: "We then turned inward to examine the friction points in Banco Alimentare's current model. As we mapped these gaps, a few early directions began to take shape. But they felt premature, so we paused and shifted to a futures thinking approach to bring a more systemic perspective to the work.",
   },
   {
     n: 3, icon: "🔭", title: "Thinking in futures",
-    tags: ["Future cones", "Backcasting","Ideation"],
-    body: "To avoid designing for today’s problems and suggesting quick fixes, we used futures thinking to ask a bigger question: what role should Banco Alimentare play in a future where food donation is the norm rather than an afterthought? Working backwards from that future helped us identify what needs to change now and grounded our ideation in systemic intent.",
+    tags: ["Future cones", "Backcasting", "Ideation"],
+    body: "To avoid designing for today's problems and suggesting quick fixes, we used futures thinking to ask a bigger question: what role should Banco Alimentare play in a future where food donation is the norm rather than an afterthought? Working backwards from that future helped us identify what needs to change now and grounded our ideation in systemic intent.",
   },
   {
     n: 4, icon: "📇", title: "Shaping the service system",
-    tags: ["Journey Mapping","Visualisation","Value mapping","Business model design"],
+    tags: ["Journey Mapping", "Visualisation", "Value mapping", "Business model design"],
     body: "With a strategic direction in place, we began designing the service system defining the key touchpoints and thinking through the business logic that would make it viable for Banco Alimentare to implement.",
     last: true,
   },
@@ -115,7 +115,7 @@ const Project5 = () => {
         >
           <img
             src={project5Img}
-            alt="Lunara — menstrual wellness app screens"
+            alt="Beyond the Table — Banco Alimentare service concept"
             className="proj-hero-img"
           />
         </motion.div>
@@ -133,28 +133,27 @@ const Project5 = () => {
 
           <FadeUp delay={0.05}>
             <p className="proj-body">
-              Essity Ventures, the innovation arm of global hygiene and health company Essity,
-              explores new opportunities across women's health. Over a 2 day solo project,
-              I explored the femtech landscape to identify service opportunities and present
-              them as early venture concepts for Essity.
+              Banco Alimentare is an Italian non-profit organisation committed to reducing food
+              waste and fighting hunger by recovering surplus food from the agro-food supply
+              chain and redistributing it to charities supporting individuals and families in need.
             </p>
           </FadeUp>
 
-          {/* Initial brief — soft lavender card */}
+          {/* Initial brief */}
           <FadeUp delay={0.1}>
-            <div className="proj-card proj-card-tint" style={{ backgroundColor: "#D8D6EE" }}>
+            <div className="proj-card proj-card-tint" style={{ backgroundColor: "#F5DEC8" }}>
               <p className="proj-card-eyebrow">INITIAL BRIEF</p>
               <p className="proj-card-body">
-                Identify potential revenue opportunities for Essity Ventures across key stages
-                of women's health (pre-teens, menstruation, post-partum or menopause) that
-                could be developed into an actionable venture within the next 2–3 years.
+                Identify new ways to retain existing donors and build loyalty so they continue
+                to donate surplus, and design strategies to reach new agri-food companies to
+                donate their surplus to Banco Alimentare.
               </p>
             </div>
           </FadeUp>
 
-          {/* Summary — salmon/rose card */}
+          {/* Summary */}
           <FadeUp delay={0.15}>
-            <div className="proj-card proj-card-tint" style={{ backgroundColor: "#F2AEAD" }}>
+            <div className="proj-card proj-card-tint" style={{ backgroundColor: "#E8D9C8" }}>
               <p
                 className="proj-card-eyebrow proj-card-eyebrow-accent"
                 style={{ color: ACCENT }}
@@ -162,11 +161,11 @@ const Project5 = () => {
                 SUMMARY
               </p>
               <p className="proj-card-body proj-card-body-lg">
-                The research revealed a gap in menstrual care where most solutions focus on
-                period tracking rather than supporting the body throughout the cycle. In
-                response, I developed Lunara, a venture concept for a cycle-aware wellness
-                ecosystem that offers personalised care packages, supportive rituals and
-                guided cycle insights.
+                Working closely with the stakeholder, we developed Beyond the Table, a service
+                system that positions Banco Alimentare as a strategic partner for its donors.
+                It supports the organisation in retaining existing partners and attracting new
+                ones through co-created storytelling (podcasts), structured onboarding and a
+                recognition framework.
               </p>
             </div>
           </FadeUp>
@@ -193,9 +192,9 @@ const Project5 = () => {
             <FadeLeft>
               <p className="proj-reframe-eyebrow">INITIAL BRIEF</p>
               <p className="proj-reframe-text">
-                Identify potential revenue opportunities for Essity Ventures across key stages
-                of women's health that could be developed into an actionable venture within
-                the next 2–3 years.
+                Identify new ways to retain existing donors and build loyalty so they continue
+                to donate surplus, and design strategies to reach new agri-food companies to
+                donate their surplus to Banco Alimentare.
               </p>
             </FadeLeft>
 
@@ -206,8 +205,8 @@ const Project5 = () => {
             <FadeRight>
               <p className="proj-reframe-eyebrow proj-reframe-eyebrow-accent">REFRAMED TO</p>
               <p className="proj-reframe-text proj-reframe-text-bold">
-                How might we design a holistic, cycle-aware care ecosystem that supports
-                women throughout their menstrual cycle?
+                How might we build sustainable relationships with donor's while positioning
+                Banco Alimentare as a valuable & strategic partner?
               </p>
             </FadeRight>
           </div>
@@ -216,8 +215,8 @@ const Project5 = () => {
 
           <FadeUp delay={0.05}>
             <p className="proj-caption">
-              The challenge was framed through market research to identify white spaces in
-              the femtech market
+              The challenge was framed by connecting the gaps in the as-is journey with a
+              long term vision for the organisation
             </p>
           </FadeUp>
 
@@ -249,11 +248,11 @@ const Project5 = () => {
 
           <div className="proj-outcome-grid" style={{ marginTop: "28px" }}>
 
-            {/* Left — salmon outcome card */}
+            {/* Left — outcome card */}
             <FadeLeft delay={0.05}>
               <div
                 className="proj-card proj-card-tint"
-                style={{ backgroundColor: "#F2AEAD", height: "100%" }}
+                style={{ backgroundColor: "#F5DEC8", height: "100%" }}
               >
                 <p className="proj-card-eyebrow" style={{ color: ACCENT, opacity: 1 }}>
                   WHAT WE DELIVERED
@@ -262,15 +261,17 @@ const Project5 = () => {
                   fontSize: "18px", fontWeight: 700, lineHeight: 1.4,
                   margin: "0 0 14px", color: "#1a2a4a",
                 }}>
-                  Lunara, a venture concept for Essity Ventures
+                  Beyond the table, a service system concept
                 </p>
                 <p style={{
                   fontSize: "13px", lineHeight: 1.7,
                   color: "#1a2a4a", margin: 0,
                 }}>
-                  A cycle-aware wellness ecosystem that blends commerce with personalised
-                  care. Lunara helps people curate and order care packages, build supportive
-                  rituals and track their cycle with guided support throughout all the phases.
+                  A service concept that repositions Banco Alimentare as a strategic partner
+                  for food donor companies, rather than just a recipient of donations. The
+                  system introduces a five-stage partnership journey from awareness and
+                  onboarding to co-created storytelling, recognition and renewal supported by
+                  a business model that outlines the roles and incentives for key stakeholders.
                 </p>
               </div>
             </FadeLeft>
@@ -278,7 +279,7 @@ const Project5 = () => {
             {/* Right — deliverables */}
             <div className="proj-outcome-right">
               <FadeUp delay={0.1}>
-                <p className="proj-outcome-right-label">The details I created:</p>
+                <p className="proj-outcome-right-label">The details we created:</p>
               </FadeUp>
               {deliverables.map((d, i) => (
                 <FadeUp key={d} delay={0.15 + i * 0.08}>
@@ -304,19 +305,19 @@ const Project5 = () => {
         <div className="proj-nav-footer">
           <motion.button
             className="proj-nav-btn"
-            onClick={() =>navigate("/project/4")}
+            onClick={() => { window.scrollTo(0, 0); navigate("/project/4"); }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >
             ‹ Previous project
           </motion.button>
           <motion.button
-  className="proj-nav-btn"
-  disabled={true}
-  style={{ opacity: 0.4, cursor: "not-allowed" }}
->
-  Next project ›
-</motion.button>
+            className="proj-nav-btn"
+            disabled={true}
+            style={{ opacity: 0.4, cursor: "not-allowed" }}
+          >
+            Next project ›
+          </motion.button>
         </div>
       </div>
 
