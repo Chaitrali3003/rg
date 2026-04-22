@@ -305,7 +305,7 @@ const Project4 = () => {
         <div className="proj-nav-footer">
           <motion.button
             className="proj-nav-btn"
-            onClick={() => navigate(-1)}
+            onClick={() => navigate("/project/3")}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >
@@ -313,7 +313,7 @@ const Project4 = () => {
           </motion.button>
           <motion.button
             className="proj-nav-btn"
-            onClick={() => navigate(1)}
+            onClick={() => { window.scrollTo(0, 0); navigate("/project/5"); }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >

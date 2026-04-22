@@ -180,11 +180,11 @@ const Project3 = () => {
       {/* ── PREV / NEXT ─────────────────────────────────────── */}
       <div style={fullWidthStyle(heroColor)}>
         <div className="proj-nav-footer">
-          <motion.button className="proj-nav-btn" onClick={() => navigate(-1)}
+          <motion.button className="proj-nav-btn" onClick={() => navigate("/project/2")}
             whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
             ‹ Previous project
           </motion.button>
-          <motion.button className="proj-nav-btn" onClick={() => navigate(1)}
+          <motion.button className="proj-nav-btn" onClick={() => { window.scrollTo(0, 0); navigate("/project/4"); }}
             whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
             Next project ›
           </motion.button>

@@ -12,12 +12,12 @@ const Footer = () => {
       <p className="footer-sub">and explore messy problems with curiosity and care</p>
     </div>
     <div className="footer-right">
-      {/* <a href="https://linkedin.com/in/yourprofile" target="_blank"> */}
+      <a href="https://www.linkedin.com/in/reema-gokhale-1b7825166/" target="_blank">
       LinkedIn ↗
-      {/* </a> */}
-      {/* <a href="/cv.pdf" download="Reema_Gokhale_CV.pdf"> */}
+      </a>
+      <a href="https://drive.google.com/uc?export=download&id=1R_aZD3FyIzoiPQTWR-JbF_a8LWJaLYM-" download="Reema_Gokhale_CV.pdf">
       CV ↗
-      {/* </a> */}
+      </a>
     </div>
   </div>
 

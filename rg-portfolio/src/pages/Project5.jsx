@@ -304,20 +304,19 @@ const Project5 = () => {
         <div className="proj-nav-footer">
           <motion.button
             className="proj-nav-btn"
-            onClick={() => navigate(-1)}
+            onClick={() =>navigate("/project/4")}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >
             ‹ Previous project
           </motion.button>
           <motion.button
-            className="proj-nav-btn"
-            onClick={() => navigate(1)}
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.97 }}
-          >
-            Next project ›
-          </motion.button>
+  className="proj-nav-btn"
+  disabled={true}
+  style={{ opacity: 0.4, cursor: "not-allowed" }}
+>
+  Next project ›
+</motion.button>
         </div>
       </div>
 

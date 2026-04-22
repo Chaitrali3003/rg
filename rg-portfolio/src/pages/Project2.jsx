@@ -271,7 +271,7 @@ const Project2 = () => {
           <motion.button
             className="proj-nav-btn"
             style={{ background: "rgba(255,255,255,0.15)", color: "white", border: "1px solid rgba(255,255,255,0.3)" }}
-            onClick={() => navigate(-1)}
+            onClick={() => navigate("/project/1")}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >
@@ -280,7 +280,7 @@ const Project2 = () => {
           <motion.button
             className="proj-nav-btn"
             style={{ background: "white", color: "#1a2a4a" }}
-            onClick={() => navigate(1)}
+            onClick={() => { window.scrollTo(0, 0); navigate("/project/3"); }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >
